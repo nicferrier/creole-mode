@@ -1,0 +1,14 @@
+WikiCreole is a standardized wiki language.
+
+It offers simple text based markup of mainly typographic elements:
+
+* lists
+* headings
+* links
+* line breaks
+* italics
+* bold
+* pre-formatted
+
+[[http://github.com/nicferrier/elwikicreole|elwikicreole]] is a parser
+and converter to HTML written in Elisp.
