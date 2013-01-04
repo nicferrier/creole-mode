@@ -58,6 +58,7 @@
       (require 'goto-addr)
       (require 'org)
       (orgtbl-mode)
+      (orgstruct-mode) ; for editing lists
       (use-local-map creole-mode-map))); function-list
   "Creole-Wiki mode.
 
