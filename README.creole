@@ -19,8 +19,5 @@ and converter to HTML written in Elisp.
 == TODO ==
 
 * fix the open url code
-* add orgstruct-mode to the init file
-* make some sort of auto-fill-mode fix that handles the link syntax (and doesn't break on links)
 * add syntax highlighting for lists
-* package and deploy on marmalade
 
