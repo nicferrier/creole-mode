@@ -51,6 +51,10 @@
     (define-key map "\C-c\C-o" 'browse-url-at-point)
     (setq creole-mode-map map)))
 
+(defvar creole-mode-hook '()
+  "Hooks for `creole-mode'.")
+
+
 (defun creole-mode/fill-break-p ()
   "Fill computation for Creole.
 
