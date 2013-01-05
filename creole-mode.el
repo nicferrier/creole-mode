@@ -81,8 +81,7 @@ Basically just does not fill within links."
       (use-local-map creole-mode-map)
       (make-local-variable 'fill-nobreak-predicate)
       (setq fill-nobreak-predicate
-            (list 'creole-mode/fill-break-p))
-      (auto-fill-mode 1)))
+            (list 'creole-mode/fill-break-p))))
   "Creole-Wiki mode.
 
 Edit files written in WikiCreole form.
