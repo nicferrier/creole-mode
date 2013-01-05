@@ -38,6 +38,12 @@
     (define-key map "\C-c\C-o" 'browse-url-at-point)
     (setq creole-mode-map map)))
 
+(defun creole-mode/fill-break-p ()
+  "Fill computation for Creole.
+
+Basically just does not fill within links."
+  (memq 'link (text-properties-at (point))))
+
 (define-generic-mode 'creole-mode
   nil ; comments
   nil; keywords
@@ -59,7 +65,11 @@
       (require 'org)
       (orgtbl-mode)
       (orgstruct-mode) ; for editing lists
-      (use-local-map creole-mode-map))); function-list
+      (use-local-map creole-mode-map)
+      (make-local-variable 'fill-nobreak-predicate)
+      (setq fill-nobreak-predicate
+            (list 'creole-mode/fill-break-p))
+      (auto-fill-mode 1)))
   "Creole-Wiki mode.
 
 Edit files written in WikiCreole form.
