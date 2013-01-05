@@ -3,7 +3,10 @@
 ;; Copyright (C) 2013  Nic Ferrier
 
 ;; Author: Nic Ferrier <nferrier@ferrier.me.uk>
+;; Maintainer: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Keywords: hypermedia, wp
+;; Version: 0.0.1
+;; URL: https://github.com/nicferrier/creole-mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -18,17 +21,27 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-;;; Commentary:
+;;; Background
 
-;; Markup creole files properly.
-;;
 ;; This was prompted by this
 ;; https://github.com/nicferrier/elwikicreole/issues/10 which
 ;; referenced this:
 ;; http://manuelp.github.com/emacs/2009/11/03/wikicreole-mode-emacs.html
 ;;
 
+;;; Commentary:
+
+;; Assist in the creation of WikiCreole files.
+;;
+;; Does auto-filling properly, has some fontification for WikiCreole
+;; elements.
+;;
+;; Should allow urls to be opened, but that's a bug right now.
+
+
 ;;; Code:
+
+(require 'org)
 
 (defvar creole-mode-map nil
   "Keymap for `creole-mode'.")
