@@ -59,7 +59,13 @@
   "Fill computation for Creole.
 
 Basically just does not fill within links."
-  (memq 'link (text-properties-at (point))))
+  (or
+   (memq 'link (text-properties-at (point)))
+   (memq 'info-title-1 (text-properties-at (point)))
+   (memq 'info-title-2 (text-properties-at (point)))
+   (memq 'info-title-3 (text-properties-at (point)))
+   (memq 'info-title-4 (text-properties-at (point)))))
+
 
 (define-generic-mode 'creole-mode
   nil ; comments
