@@ -1,3 +1,5 @@
+= Edit WikiCreole files =
+
 WikiCreole is a standardized wiki language.
 
 It offers simple text based markup of mainly typographic elements:
