@@ -5,7 +5,7 @@
 ;; Author: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Maintainer: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Keywords: hypermedia, wp
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; URL: https://github.com/nicferrier/creole-mode
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -88,6 +88,7 @@ Basically just does not fill within links."
       (require 'org)
       (orgtbl-mode)
       (orgstruct-mode) ; for editing lists
+      (goto-address)
       (use-local-map creole-mode-map)
       (make-local-variable 'fill-nobreak-predicate)
       (setq fill-nobreak-predicate
