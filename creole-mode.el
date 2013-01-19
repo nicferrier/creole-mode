@@ -5,7 +5,7 @@
 ;; Author: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Maintainer: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Keywords: hypermedia, wp
-;; Version: 0.0.2
+;; Version: 0.0.3
 ;; URL: https://github.com/nicferrier/creole-mode
 
 ;; This program is free software; you can redistribute it and/or modify
