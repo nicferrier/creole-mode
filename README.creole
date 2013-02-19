@@ -20,4 +20,5 @@ and converter to HTML written in Elisp.
 
 * fix the open url code
 * add syntax highlighting for lists
-
+* add customization
+** at least the hook
