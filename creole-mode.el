@@ -79,7 +79,7 @@ or list items or titles."
 (define-generic-mode 'creole-mode
   nil ; comments
   nil; keywords
-  '(("^\\(= \\)\\(.*?\\)\\($\\| =$\\)" . 'info-title-1)
+  `(("^\\(= \\)\\(.*?\\)\\($\\| =$\\)" . 'info-title-1)
     ("^\\(== \\)\\(.*?\\)\\($\\| ==$\\)" . 'info-title-2)
     ("^\\(=== \\)\\(.*?\\)\\($\\| ===$\\)" . 'info-title-3)
     ("^\\(====+ \\)\\(.*?\\)\\($\\| ====+$\\)" . 'info-title-4)
