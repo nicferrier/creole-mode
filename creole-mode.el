@@ -87,6 +87,7 @@ or list items or titles."
     ("\\[\\[.*?\\]\\]" . 'link)
     ("\\[\\[\\[.*?\\]\\]\\]" . 'link)
     ("\\[.*\\]" . 'link)
+    ;;("{{\\(.*\\)}}" . ,(list 'face 'image 'display nic-img-1))
     ("\\[b\\].*?\\[/b\\]" . 'bold)
     ("//.*?//" . 'italic)
     ("\\*\\*.*?\\*\\*" . 'bold)
