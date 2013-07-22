@@ -89,9 +89,11 @@ or list items or titles."
     ("\\[.*\\]" . 'link)
     ;;("{{\\(.*\\)}}" . ,(list 'face 'image 'display nic-img-1))
     ("\\[b\\].*?\\[/b\\]" . 'bold)
-    ("//.*?//" . 'italic)
+    ("//.*?//" . 'bold-italic)
     ("\\*\\*.*?\\*\\*" . 'bold)
     ("_.*?_" . 'underline)
+    ("{{{\\(.*?\\)}}}" . 'font-lock-string-face)
+    ("^{{{\n\\(.*?\\)\n}}}" . 'font-lock-string-face)
     ("\\\\\\\\[ \t]+" . font-lock-warning-face)) ; font-lock list
   '(".creole\\'"); auto-mode-alist
   '((lambda ()
